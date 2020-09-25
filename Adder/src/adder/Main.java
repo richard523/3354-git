@@ -1,4 +1,5 @@
 package adder;
+import java.util.Scanner;
 
 public class Main {
 
@@ -12,6 +13,19 @@ public class Main {
     }
 
     private static int addArguments(String[] args) {
-        return Integer.valueOf(args[0]) + Integer.valueOf(args[1]);
+        int num1, num2, sum;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter First Number: ");
+        num1 = sc.nextInt();
+        
+        System.out.println("Enter Second Number: ");
+        num2 = sc.nextInt();
+        
+        sc.close();
+        sum = num1 + num2;
+        System.out.println("Sum of these numbers: "+sum);
+        
+        // return Integer.valueOf(args[0]) + Integer.valueOf(args[1]);
+        return sum;
     }
 }
