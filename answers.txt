@@ -17,3 +17,4 @@ Git reset is specifically about updating the index and moving the HEAD. git chec
 (f) What happens if you try to pull remote changes when there are uncommitted
 changes in your working directory?
 Git won’t let you until you for example push the remote changes.
+
