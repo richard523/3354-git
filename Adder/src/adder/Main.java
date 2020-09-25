@@ -13,17 +13,23 @@ public class Main {
     }
 
     private static int addArguments(String[] args) {
-        int num1, num2, sum;
+        int howMany, num1, num2, sum;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter First Number: ");
-        num1 = sc.nextInt();
+        System.out.println("Enter how many inputs: ");
+        // howMany = sc.nextInt();
+        sum = 0;
+        for (howMany = sc.nextInt(); howMany > 0; howMany--) {
+            num1 = 0;
+            System.out.println("Enter number " + howMany);
+            num1 = sc.nextInt();
+            sum += num1;
+        }
         
-        System.out.println("Enter Second Number: ");
-        num2 = sc.nextInt();
         
+
+
         sc.close();
-        sum = num1 + num2;
-        System.out.println("Sum of these numbers: "+sum);
+        
         
         // return Integer.valueOf(args[0]) + Integer.valueOf(args[1]);
         return sum;
